@@ -60,7 +60,7 @@ a{
 
 /* Head */
 
-.head{
+.main_wrap{
     min-height: 110vh;
 }
 
@@ -160,7 +160,7 @@ a{
 
 @media screen and (max-width: 992px) {
 
-    .head{
+    .main_wrap{
         min-height: 110vh !important;
     }
     .burger__container{
