@@ -160,9 +160,6 @@ a{
 
 @media screen and (max-width: 992px) {
 
-    .main_wrap{
-        min-height: 110vh !important;
-    }
     .burger__container{
         display: inline-block;
     }
