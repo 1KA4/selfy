@@ -62,7 +62,6 @@ a{
 
 .head{
     min-height: 110vh;
-    height: 110vh;
 }
 
 
@@ -160,6 +159,10 @@ a{
 }
 
 @media screen and (max-width: 992px) {
+
+    .head{
+        min-height: 110vh !important;
+    }
     .burger__container{
         display: inline-block;
     }
