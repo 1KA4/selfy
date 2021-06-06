@@ -111,3 +111,30 @@
     color: #3c4a52;
     transition: .2s color linear;
 }
+
+@media screen and (max-width: 992px) {
+        /* Index */
+    .content__inner{
+        flex-direction: column;
+    }
+    .wrapper__inner{
+        margin-top: 0;
+    }
+
+    .content__inner--col{
+        width: 100% ;
+        margin-bottom: 1rem;
+    }
+
+    .wrapper__inner{
+        width: 100% ;
+    }
+
+    .wrapper__inner h1{
+        font-size: 4rem ;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+}

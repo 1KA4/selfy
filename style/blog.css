@@ -16,11 +16,6 @@
 .acticle__image{
     width: 65%;
 }
-.acticle__image img{
-    max-width: 100%;
-    border: 6px solid #fff;
-    margin-bottom: 2rem;
-}
 
 .acticle__title{
     padding: 1rem 0 1.2rem;
@@ -84,4 +79,21 @@
     font-size: 1rem;
     color: #ffc000;
     margin-right: .3rem;
+}
+
+@media screen and (max-width: 992px){
+    /* Blog */
+    .article__inner{
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .acticle__content{
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+    .acticle__content,
+    .acticle__image{
+        width: 100%;
+    }
 }

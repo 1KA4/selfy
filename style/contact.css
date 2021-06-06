@@ -140,5 +140,41 @@ color: #ffc000;
     color: #3c4a52;
 
     transition: .2s color linear;
+}
 
+@media screen and (max-width: 992px){
+    /* Contact */
+    .contact{
+        margin: 0 0 1rem;
+    }
+    .contact__inner{
+        flex-direction: column;
+    }
+
+    .contact__form{
+        width: 100% ;
+    }
+
+    .contact__form--title{
+        font-size: 3rem;
+    }
+
+    .contact__form--desc{
+        font-size: 1.5rem;
+    }
+
+    .contact__networks{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+
+    .contact__networks--links{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    #formUserName,
+    #formUserEmail{
+        width: 100%;
+    }
 }

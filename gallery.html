@@ -72,15 +72,15 @@
                     <div class="acticle__image gallery__one">
 
                         <div class="gallery__one--one">
-                            <img src="img/mock.jpg" alt="Post Image Preview">
-                            <img src="img/mock3.jpg" alt="Post Image Preview">
-                            <img src="img/mock5.jpg" alt="Post Image Preview">
+                            <img src="img/mock.jpg" class="img" data-modal="0" alt="Post Image Preview">
+                            <img src="img/mock3.jpg" class="img" data-modal="1" alt="Post Image Preview">
+                            <img src="img/mock5.jpg" class="img" data-modal="3" alt="Post Image Preview">
                         </div>
 
                         <div class="gallery__one--two">
-                            <img src="img/mock2.jpg" alt="Post Image Preview">
-                            <img src="img/mock4.jpg" alt="Post Image Preview">
-                            <img src="img/mock6.jpg" alt="Post Image Preview">
+                            <img src="img/mock2.jpg" class="img" data-modal="5" alt="Post Image Preview">
+                            <img src="img/mock4.jpg" class="img" data-modal="2" alt="Post Image Preview">
+                            <img src="img/mock6.jpg" class="img" data-modal="4" alt="Post Image Preview">
                         </div>
                         
                     </div>
@@ -102,13 +102,13 @@
                         </p>
                     </div>
                     <div class="acticle__image gallery__two">
-                        <img src="img/mock7.jpg" alt="Post Image Preview">
+                        <img src="img/mock7.jpg" class="img" data-modal="6" alt="Post Image Preview">
 
                         <div class="gallery__one--one">
-                            <img src="img/mock.jpg" alt="Post Image Preview">
+                            <img src="img/mock.jpg" class="img" data-modal="0" alt="Post Image Preview">
                         </div>
                         <div class="gallery__one--two">
-                            <img src="img/mock3.jpg" alt="Post Image Preview">
+                            <img src="img/mock3.jpg" class="img" data-modal="1" alt="Post Image Preview">
                         </div>
                     </div>
                 </div>
@@ -129,8 +129,8 @@
                         </p>
                     </div>
                     <div class="acticle__image ">
-                        <img src="img/mock2.jpg" alt="Post Image Preview">
-                        <img src="img/mock6.jpg" alt="Post Image Preview">
+                        <img src="img/mock2.jpg" class="img" data-modal="5" alt="Post Image Preview">
+                        <img src="img/mock6.jpg"  class="img" data-modal="4" alt="Post Image Preview">
                     </div>
                 </div>
             </div>
@@ -164,6 +164,47 @@
         </div>
     </footer>
     <!-- ./footer -->
+    
+    <!-- Slider -->
+    <div class="modal" id="modal_project">
+        <div class="modal__dialog">
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slider">
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock3.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock4.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock5.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock6.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock2.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img id="workImage" src="img/mock7.jpg" alt="About Me Image">
+                        </div>
+                    </div>
+                    
+                    <div class="slider__btn prev">
+                        <div class="btn__prev"><</div>
+                    </div>
+                    <div class="slider__btn next">
+                        <div class="btn__next">></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 
 </body>

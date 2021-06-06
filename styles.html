@@ -101,17 +101,17 @@
                         <p class="style__form--subtext pb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
 
                         <div class="style__images--img">
-                            <img class="img" src="img/mock-small.jpg" alt="Image">
+                            <img class="img" src="img/mock-small.jpg" data-modal="0" alt="Image">
 
                             <div class="style__images--img--two">
-                                <img src="img/mock.jpg" alt="Image" class="img img2x">
-                                <img src="img/mock3.jpg" alt="Image" class="img img2x">
+                                <img src="img/mock.jpg" alt="Image" data-modal="1" class="img img2x">
+                                <img src="img/mock3.jpg" alt="Image" data-modal="2" class="img img2x">
                             </div>
 
                             <div class="style__images--img--three">
-                                <img src="img/mock4.jpg" alt="Image" class="img img3x">
-                                <img src="img/mock5.jpg" alt="Image" class="img img3x">
-                                <img src="img/mock6.jpg" alt="Image" class="img img3x">
+                                <img src="img/mock4.jpg" alt="Image" data-modal="3" class="img img3x">
+                                <img src="img/mock5.jpg" alt="Image" data-modal="4" class="img img3x">
+                                <img src="img/mock6.jpg" alt="Image" data-modal="5" class="img img3x">
                             </div>
                         </div>
 
@@ -407,7 +407,7 @@
                     <div class="style__networks--desc">
                         <p>Donec id elilit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 
-                        <img src="img/mock2.jpg" alt="Image">
+                        <img src="img/mock2.jpg" class="img" data-modal="6" alt="Image">
                     </div>
                 </div>
             </div>
@@ -439,6 +439,47 @@
         </div>
     </footer>
     <!-- ./footer -->
+
+    <!-- Slider -->
+    <div class="modal" id="modal_project">
+        <div class="modal__dialog">
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slider">
+                        <div class="slider__photo">
+                            <img id="workImage" src="img/mock-small.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock3.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock4.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock5.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock6.jpg" alt="About Me Image">
+                        </div>
+                        <div class="slider__photo">
+                            <img  id="workImage" src="img/mock2.jpg" alt="About Me Image">
+                        </div>
+                    </div>
+                    
+                    <div class="slider__btn prev">
+                        <div class="btn__prev"><</div>
+                    </div>
+                    <div class="slider__btn next">
+                        <div class="btn__next">></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 
 </body>

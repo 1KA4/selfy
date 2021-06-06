@@ -132,6 +132,17 @@ a{
     color: #ffc000;
 }
 
+.img{
+    width: 100%;
+    border: 6px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.img:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+
 /* Footer */
 .footer__inner{
     display: flex;
@@ -158,10 +169,160 @@ a{
     
 }
 
+/* Slider */
+
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    overflow: auto;
+    
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.modal__dialog{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+
+    transform: scale(0);
+    transition: .2s transform linear;
+}
+
+.show{
+    display: flex;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+.modal-work{
+    display: flex;
+}
+
+.modal__dialog--sm{
+    max-width: 900px;
+}
+
+.modal-work__preview{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Slider */
+
+.slider__photo img{
+    width: 100%;
+    border: 6px solid #fff;
+}
+
+.show__image{
+    display: block;
+}
+
+.hide__image{
+    display: none;
+}
+
+/* Slider Buttons */
+
+.slider__btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    padding: 2rem;
+    height: 100%;
+
+    font-size: 3.33rem;
+    font-weight: bolder;
+    color: white;
+    
+    z-index: 100;
+    cursor: pointer;
+
+}
+
+.btn__prev,
+.btn__next{
+    display: none;
+}
+
+.slider__btn:hover
+.btn__prev{
+    display: inline;
+}
+
+.slider__btn:hover
+.btn__next{
+    display: inline;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
+
+
+/* Media Slider */
+
+@media only screen and (max-width: 992px) {
+    .modal-work {
+      flex-wrap: wrap;
+    }
+    .header__inner{
+        padding-bottom: 1rem;
+    }
+
+    .header{
+        padding-top: 2rem;
+    }
+
+    .modal-work__preview{
+        width: 100%;
+    }
+
+    .modal-work__content{
+        width: 100%;
+        padding: 1.5rem 1.3rem 5rem;
+    }
+
+    .slider__btn{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
+
+
+/* Media Pages */
+
 @media screen and (max-width: 992px) {
+
+    .logo img{
+        width: 120px;
+    }
 
     .burger__container{
         display: inline-block;
+    }
+
+    .container{
+        padding: 0 5%;
     }
 
     .nav{
@@ -184,106 +345,8 @@ a{
     .nav__link{
         width: 100%;
     }
-
-    /* Index */
-    .content__inner{
-        flex-direction: column;
-    }
-
-    .content__inner--col{
-        width: 100% !important;
-        margin-bottom: 1rem;
-    }
-
-    .wrapper__inner{
-        width: 100% !important;
-    }
-
-    .wrapper__inner h1{
-        font-size: 4rem !important;
-    }
-
-
-    /* About */
-
-    .about__cols{
-        flex-direction: column;
-    }
-
-    .about__cols--col{
-        width: 100% !important;
-    }
-    
-    /* Blog */
-    .article__inner{
-        flex-direction: column;
-    }
-
-    .acticle__content{
-        padding-bottom: 2rem;
-    }
-    .acticle__content,
-    .acticle__image{
-        width: 100% !important;
-    }
-
-    /* Contact */
-    .contact__inner{
-        flex-direction: column;
-    }
-
-    .contact__form{
-        width: 100% !important;
-    }
-
-    .contact__networks{
-        width: 100% !important;
-        border: none !important;
-        padding: 0 !important;
-    }
-
-    /* Gallery */
-    .gallery__one{
-        flex-direction: column;
-    }
-
-    .gallery__one--one,
-    .gallery__one--two{
-        width: 100% !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    /* ///////// Styles ////////////// */
-/* Buttons */
-    .style__button{
-        width: 100% !important;
-    }
-
-    /* Images */
-    .style__images--img{
-        flex-direction: column !important;
-    }
-
-    .style__images--img--two img,
-    .style__images--img--three img{
-        width: 100%;
-    }
-    
-    /* Columns */
-    .style__column{
-        flex-direction: column;
-    }
-    
-    .col2,
-    .col1,
-    .col3,
-    .col4,
-    .col34,
-    .col23{
-        width: 100% !important;
-    }
 }
+
 @media screen and (max-width: 768px){
 
 }

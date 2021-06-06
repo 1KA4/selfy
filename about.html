@@ -51,10 +51,10 @@
         <div class="container">
             <div class="about__inner">
                 <div class="about__img">
-                    <img src="img/mock-small.jpg" alt="About Me Image">
+                    <img data-modal="0" src="img/mock-small.jpg" alt="About Me Image">
                 </div>
                 <div class="about__content">
-                    <h1>About Me</h1>
+                    <h1 class="dot">About Me</h1>
                     <p class="about__content--cyt">Praesent commodo cursus magna, venenatis vestibulum. Donec id elit non mi porta gravida at eget vel scelerisl consectetur etsie.</p>
                     <div class="about__cols">
                         <div class="about__cols--col">
@@ -100,6 +100,29 @@
         </div>
     </footer>
     <!-- ./footer -->
+
+    <!-- Slider -->
+    <div class="modal" id="modal_project">
+        <div class="modal__dialog">
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slider">
+                        <div class="slider__photo">
+                            <img class="modal-work__photo img" id="workImage" src="img/mock-small.jpg" alt="About Me Image">
+                        </div>
+                    </div>
+                    
+                    <div class="slider__btn prev">
+                        <div class="btn__prev"><</div>
+                    </div>
+                    <div class="slider__btn next">
+                        <div class="btn__next">></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

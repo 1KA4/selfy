@@ -91,12 +91,6 @@ color: #ffc000;
     transition: .2s color linear;
 }
 
-.style__networks--desc img{
-    width: 100%;
-    border: 6px solid #fff;
-    margin-top: 1rem;
-}
-
 /* Headings */
 .style{
     margin-top: 3rem;
@@ -229,12 +223,6 @@ color: #ffc000;
 }
 
 /* Images */
-
-.img{
-    width: 100%;
-    border: 6px solid #fff;
-    margin-bottom: 1rem;
-}
 
 .style__images{
     padding-bottom: 2rem;
@@ -441,5 +429,70 @@ blockquote{
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+
+@media screen and (max-width: 992px){
+
+    .style{
+        margin: 1rem 0;
+    }
+
+    .style__inner{
+        flex-direction: column;
+    }
+
+    .style__form{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .style__form--title{
+        font-size: 3rem;
+    }
+
+    .style__form--desc{
+        font-size: 1.5rem;
+    }
+
+    .style__networks{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+
+
+    /* Buttons */
+    .style__button{
+        width: 100%;
+    }
+
+    /* Images */
+    .style__images--img{
+        flex-direction: column;
+    }
+
+    .style__images--img--two img,
+    .style__images--img--three img{
+        width: 100%;
+    }
+    
+    /* Columns */
+    .style__column{
+        flex-direction: column;
+    }
+    
+    .col2,
+    .col1,
+    .col3,
+    .col4,
+    .col34,
+    .col23{
+        width: 100%;
+    }
+
+    .quotes__two{
+        font-size: 1.5rem;
+    }
 }
 
