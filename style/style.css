@@ -188,7 +188,7 @@ a{
 }
 
 .modal__dialog{
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     margin: auto;
     position: relative;
@@ -285,6 +285,11 @@ a{
     .modal-work {
       flex-wrap: wrap;
     }
+
+    .modal__dialog{
+        width: 100%;
+    }
+
     .header__inner{
         padding-bottom: 1rem;
     }
